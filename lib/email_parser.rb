@@ -7,9 +7,9 @@ class EmailParser
 
   def parse
     emails.split.map { |email| email.split(',')  }
-  end.flatten.uniq
+  end.flatten
 end
-end
+
 
 # Build a class EmailParser that accepts a string of unformatted
 # emails. The parse method on the class should separate them into
